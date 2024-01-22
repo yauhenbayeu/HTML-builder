@@ -7,8 +7,7 @@ const copyDir = async () => {
   const folderPath = path.resolve(__dirname, 'files');
   const folderCopyPath = path.resolve(__dirname, 'files-copy');
 
-  console.log(folderPath);
-
+  // console.log(folderPath);
   try {
     await mkdir(folderCopyPath, { recursive: true });
     const files = await readdir(folderPath, { withFileTypes: true });
